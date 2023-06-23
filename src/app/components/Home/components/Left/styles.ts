@@ -18,6 +18,18 @@ export const ContainerProfile = styled.div`
     height: auto;
     border-radius: 50%;
   }
+
+  animation: LeftSide 1s ease-in-out;
+
+  @keyframes LeftSide {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
 `
 
 export const ContainerInfo = styled.div`
@@ -26,6 +38,18 @@ export const ContainerInfo = styled.div`
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+
+  animation: Profile 0.9s ease-in-out;
+
+  @keyframes Profile {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
 `
 
 export const ContainerSkills = styled.div`
