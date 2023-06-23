@@ -1,34 +1,15 @@
-import {
-  ContainerInfo,
-  ContainerProfile,
-  ContainerSkills,
-  HomeContainer,
-  HomeContainerLeft,
-  HomeContainerRight,
-} from './styles'
-import { skills } from '../../../data/Skills'
-import profile from '../../../../public/profile.jpeg'
-import Image from 'next/image'
-import { Person } from './components/Person'
+import { HomeContainer, HomeContainerLeft, HomeContainerRight } from './styles'
+import { MyPresentation } from './components/Right'
+import { MyProfile } from './components/Left'
 
 export const Home = () => {
   return (
     <HomeContainer>
       <HomeContainerLeft>
-        <ContainerProfile>
-          <Image src={profile} alt="" />
-          <ContainerInfo>
-            <Person />
-          </ContainerInfo>
-          <ContainerSkills>
-            {skills.map((item) => {
-              return <span key={item.id}>{item.skill}</span>
-            })}
-          </ContainerSkills>
-        </ContainerProfile>
+        <MyProfile />
       </HomeContainerLeft>
       <HomeContainerRight>
-        <h1>right</h1>
+        <MyPresentation />
       </HomeContainerRight>
     </HomeContainer>
   )
