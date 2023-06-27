@@ -58,6 +58,10 @@ export const ContainerSkills = styled.div`
     transition: 0.2s all ease-in-out;
   }
 
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   span {
     border-radius: 6px;
     display: flex;

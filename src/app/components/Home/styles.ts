@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
   padding: 30px;
   text-align: justify;
 
-  @media (max-width: 768px) {
+  @media (max-width: 880px) {
     flex-direction: column;
     align-items: center;
   }
