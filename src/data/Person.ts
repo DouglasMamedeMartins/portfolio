@@ -1,8 +1,9 @@
 type PersonProps = {
+  id: number
   name: string
   role: string
 }
 
 export const person: PersonProps[] = [
-  { name: 'Douglas Mamede Martins', role: 'Desenvolvedor front-end' },
+  { id: 1, name: 'Douglas Mamede Martins', role: 'Desenvolvedor front-end' },
 ]

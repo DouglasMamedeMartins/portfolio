@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   max-width: 500px;
+  margin-left: 25px;
   padding: 20px;
   margin-top: 100px;
   display: flex;
@@ -11,7 +12,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   line-height: 1.6;
-  border: 1px solid #ccc;
 
   animation: rightSide 1s ease-in-out;
 

@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 
 export const ContainerProfile = styled.div`
-  border: 1px solid white;
   padding: 20px;
-  width: 300px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
   span {
     font-size: 20px;
   }
@@ -57,14 +53,34 @@ export const ContainerSkills = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
+  :hover {
+    background-color: #6833e4;
+    transition: 0.2s all ease-in-out;
+  }
 
   span {
-    border: 1px solid #202024;
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     text-align: center;
+    animation: Skills 1s ease-in-out;
+  }
+
+  img {
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+  }
+
+  @keyframes Skills {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 `

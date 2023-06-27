@@ -1,12 +1,14 @@
-import { skills } from '@/data/Skills'
-import profile from '../../../../../../public/profile.jpeg'
-import Image from 'next/image'
 import {
   ContainerProfile,
   ContainerInfo,
   ContainerSkills,
 } from '../Left/styles'
-import { Person } from '../Person'
+import { skills } from '@/data/Skills'
+
+import profile from '../../../../../../public/profile.jpeg'
+import Image from 'next/image'
+import { SkillsList } from '../SkillsList'
+import { Person } from '../Person/Person'
 
 export const MyProfile = () => {
   return (
@@ -17,9 +19,9 @@ export const MyProfile = () => {
           <Person />
         </ContainerInfo>
         <ContainerSkills>
-          {skills.map((item) => {
-            return <span key={item.id}>{item.skill}</span>
-          })}
+          {skills.map((item) => (
+            <SkillsList key={item.id} skill={item} />
+          ))}
         </ContainerSkills>
       </ContainerProfile>
     </div>

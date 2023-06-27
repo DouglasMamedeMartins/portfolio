@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  background-color: blue;
+  background-color: #6833e4;
   padding: 20px 10px;
 `
 
 export const Ul = styled.ul`
+  max-width: 1100px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
