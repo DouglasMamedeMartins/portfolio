@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const ContainerProfile = styled.div`
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   span {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   img {
-    width: 200px;
+    width: 12.5rem;
     height: auto;
     border-radius: 50%;
   }
@@ -26,14 +26,32 @@ export const ContainerProfile = styled.div`
       transform: translateX(0);
     }
   }
+
+  @media (max-width: 700px) {
+    img {
+      width: 11rem;
+    }
+    span {
+      font-size: 1.15rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      width: 9rem;
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
 `
 
 export const ContainerInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
 
   animation: Profile 0.9s ease-in-out;
 
@@ -49,33 +67,15 @@ export const ContainerInfo = styled.div`
 `
 
 export const ContainerSkills = styled.div`
-  margin-top: 25px;
+  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-  :hover {
-    background-color: #6833e4;
-    transition: 0.2s all ease-in-out;
-  }
-
-  @media (max-width: 700px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  span {
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    text-align: center;
-    animation: Skills 1s ease-in-out;
-  }
+  gap: 0.312rem;
 
   img {
     margin-top: 5px;
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
   }
 
   @keyframes Skills {
@@ -85,6 +85,19 @@ export const ContainerSkills = styled.div`
 
     100% {
       transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+    img {
+      height: 7rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    img {
+      height: 4.8rem;
     }
   }
 `

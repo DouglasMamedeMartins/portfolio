@@ -4,11 +4,11 @@ export const HeaderContainer = styled.header`
   width: 100%;
   margin: 0 auto;
   background-color: #6833e4;
-  padding: 20px 10px;
+  padding: 1.25rem 0.625rem;
 `
 
 export const Ul = styled.ul`
-  max-width: 1100px;
+  max-width: 68.75rem;
   margin: auto;
   display: flex;
   justify-content: space-between;

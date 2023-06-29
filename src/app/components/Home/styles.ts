@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
-  max-width: 1400px;
-  height: calc(100vh - 85px);
+  max-width: 87.5rem;
+  height: calc(100vh - 5.31rem);
   margin: auto;
   display: flex;
-  margin-top: 25px;
+  margin-top: 1.56rem;
   color: white;
-  padding: 30px;
+  padding: 1.875rem;
   text-align: justify;
 
   @media (max-width: 880px) {

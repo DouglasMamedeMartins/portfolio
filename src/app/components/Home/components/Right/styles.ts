@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 500px;
-  margin-left: 25px;
-  padding: 20px;
-  margin-top: 100px;
+  max-width: 31.25rem;
+  margin-left: 1.56rem;
+  padding: 1.25rem;
+  margin-top: 6.25rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
   justify-content: center;
   line-height: 1.6;
@@ -24,12 +24,16 @@ export const Container = styled.div`
       transform: translateX(0);
     }
   }
+
+  @media (max-width: 880px) {
+    padding-top: 6rem;
+  }
 `
 
 export const Title = styled.h2`
-  font-size: 36px;
+  font-size: 2.25rem;
 `
 
 export const Paragraph = styled.p`
-  font-size: 18px;
+  font-size: 1.125rem;
 `
