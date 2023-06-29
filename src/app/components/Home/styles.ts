@@ -8,7 +8,12 @@ export const HomeContainer = styled.div`
   margin-top: 1.56rem;
   color: white;
   padding: 1.875rem;
-  text-align: justify;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   @media (max-width: 880px) {
     flex-direction: column;

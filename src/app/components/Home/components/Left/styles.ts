@@ -27,6 +27,15 @@ export const ContainerProfile = styled.div`
     }
   }
 
+  @media (max-width: 1100px) {
+    img {
+      width: 14rem;
+    }
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
   @media (max-width: 700px) {
     img {
       width: 11rem;
@@ -42,6 +51,12 @@ export const ContainerProfile = styled.div`
     }
     span {
       font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    img {
+      width: 7rem;
     }
   }
 `
@@ -85,6 +100,16 @@ export const ContainerSkills = styled.div`
 
     100% {
       transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    img {
+      height: 5rem;
+    }
+    span {
+      font-size: 1.5rem;
     }
   }
 
