@@ -1,5 +1,4 @@
-import { styled } from 'styled-components'
-
+import styled from 'styled-components'
 export const TitleSkill = styled.span`
   border-radius: 6px;
   display: flex;

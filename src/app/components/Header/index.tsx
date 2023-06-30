@@ -1,8 +1,16 @@
 'use client'
 
+import { useContext } from 'react'
 import { HeaderContainer, Link, Ul } from './styles'
+import { ThemeContext } from 'styled-components'
+import Switch from 'react-switch'
 
-export const Header = () => {
+type Props = {
+  onChangeTheme: () => void
+}
+
+export const Header = ({ onChangeTheme }: Props) => {
+  const { name, colors } = useContext(ThemeContext)
   return (
     <HeaderContainer>
       <Ul>
@@ -15,6 +23,17 @@ export const Header = () => {
         <li>
           <Link href="">Contato</Link>
         </li>
+        <Switch
+          onChange={onChangeTheme}
+          checked={name === 'light'}
+          height={20}
+          width={40}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          handleDiameter={20}
+          offColor={colors.text}
+          onColor={colors.text}
+        />
       </Ul>
     </HeaderContainer>
   )

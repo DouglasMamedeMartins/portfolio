@@ -7,6 +7,8 @@ export const ContainerProfile = styled.div`
   align-items: center;
   span {
     font-size: 1.25rem;
+    color: ${(props) => props.theme.colors.text};
+    transition: all 0.5s ease-in-out;
   }
 
   img {
@@ -47,7 +49,7 @@ export const ContainerProfile = styled.div`
 
   @media (max-width: 500px) {
     img {
-      width: 9rem;
+      width: 8rem;
     }
     span {
       font-size: 1rem;

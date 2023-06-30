@@ -8,4 +8,5 @@
 
 body {
   background: linear-gradient(#9466ff, #9198e5);
+  overflow-x: hidden;
 }

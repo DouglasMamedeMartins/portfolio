@@ -13,6 +13,8 @@ export const Container = styled.div`
   justify-content: center;
   line-height: 1.6;
   text-align: justify;
+  color: ${({ theme }) => theme.colors.text};
+  transition: all 0.5s ease-in-out;
 
   animation: rightSide 1s ease-in-out;
 
