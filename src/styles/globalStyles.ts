@@ -8,10 +8,11 @@ export default createGlobalStyle`
   }
 
   body {
-    background: linear-gradient(#9466ff, #9198e5);
-    background-color: ${(props) => props.theme.colors.background};
+    background: linear-gradient(${(props) =>
+      props.theme.colors.primaryColor}, ${(props) =>
+  props.theme.colors.secondaryColor});
     
     
-  }
+      }
  
 `

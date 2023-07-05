@@ -1,9 +1,10 @@
 const darkTheme = {
   name: 'dark',
   colors: {
-    background: '',
-    titles: '#000',
-    text: '#000',
+    primaryColor: '#000',
+    secondaryColor: '#363636',
+    titles: '#fff',
+    text: '#9466ff',
   },
 }
 

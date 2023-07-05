@@ -1,9 +1,10 @@
 const lightTheme = {
   name: 'light',
   colors: {
-    background: 'linear-gradient(#9466ff, #9198e5)',
-    titles: '#fff',
-    text: '#ccc',
+    primaryColor: '#9466ff',
+    secondaryColor: '#9198e5',
+    titles: '#000',
+    text: '#000',
   },
 }
 
