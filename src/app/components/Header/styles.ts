@@ -15,13 +15,13 @@ export const Ul = styled.ul`
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  :hover {
-    color: #121214;
-    transition: all 0.1s ease-in-out;
-  }
 `
 
 export const Link = styled.a`
   color: white;
   text-decoration: none;
+  :hover {
+    color: ${(props) => props.theme.colors.titles};
+    transition: all 0.1s ease-in-out;
+  }
 `

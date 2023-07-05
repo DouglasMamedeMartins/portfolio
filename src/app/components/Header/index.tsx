@@ -1,5 +1,3 @@
-'use client'
-
 import { useContext } from 'react'
 import { HeaderContainer, Link, Ul } from './styles'
 import { ThemeContext } from 'styled-components'

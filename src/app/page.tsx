@@ -6,6 +6,7 @@ import { useState } from 'react'
 import light from '../themes/light'
 import dark from '../themes/dark'
 import GlobalStyles from '@/styles/globalStyles'
+import { Contact } from './components/Contact'
 
 const Page = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(light)
@@ -19,8 +20,9 @@ const Page = () => {
       <div onChange={onChangeTheme}>
         <Header onChangeTheme={onChangeTheme} />
         <Home />
+        <Contact />
+        <GlobalStyles />
       </div>
-      <GlobalStyles />
     </ThemeProvider>
   )
 }
