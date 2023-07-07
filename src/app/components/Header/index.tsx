@@ -13,10 +13,10 @@ export const Header = ({ onChangeTheme }: Props) => {
     <HeaderContainer>
       <Ul>
         <li>
-          <Link href="">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="">Projetos</Link>
+          <Link href="/projects">Projetos</Link>
         </li>
         <li>
           <Link href="">Contato</Link>

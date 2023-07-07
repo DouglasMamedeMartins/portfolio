@@ -2,31 +2,36 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.footer`
   width: 100%;
-  height: 100px;
   margin: 0 auto;
   background-color: ${(props) => props.theme.colors.background};
+  padding: 0 1rem;
 `
 
 export const ContactContent = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 68.75rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 `
 
 export const ContentLink = styled.div`
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 2.5rem 0;
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.colors.titles};
+    color: ${(props) => props.theme.colors.text};
 
     &:hover {
-      color: ${(props) => props.theme.colors.secondaryColor};
+      color: ${(props) => props.theme.colors.white};
     }
   }
   svg {
-    color: ${(props) => props.theme.colors.titles};
+    color: ${(props) => props.theme.colors.text};
+    &:hover {
+      color: ${(props) => props.theme.colors.white};
+    }
   }
 `

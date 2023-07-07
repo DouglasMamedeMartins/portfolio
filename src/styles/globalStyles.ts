@@ -11,7 +11,7 @@ export default createGlobalStyle`
     background: linear-gradient(${(props) =>
       props.theme.colors.primaryColor}, ${(props) =>
   props.theme.colors.secondaryColor});
-    
+    overflow-x: hidden;
     
       }
  
